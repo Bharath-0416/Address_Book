@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include<ctype.h>
 #include <stdlib.h>
@@ -246,6 +245,7 @@ int searchContact(AddressBook *addressBook)
         }       
 
     }while(search);
+    return 0;
 }
 
 void editContact(AddressBook *addressBook)
@@ -383,6 +383,7 @@ void deleteContact(AddressBook *addressBook)
 }
 int  isvalid_name(char * str2,AddressBook * addressBook)
 {
+    (void)addressBook;      //Here we are not using addressbook structure
     int j=3;
     while(j)                 //For 3 attempts
     {
@@ -436,6 +437,7 @@ int  isvalid_name(char * str2,AddressBook * addressBook)
         }
         
     }
+    return 0;
 }
 int isvalid_mobile(char * str2,AddressBook * addressBook)
 {
