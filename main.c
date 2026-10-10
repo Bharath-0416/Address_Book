@@ -7,19 +7,9 @@ Project Title:Address Book
 
 Documentation:
 
-A structure the name,mail,phone with size .This structure is nested with the other structure and it contains contact count.
-In the main() firstly we intiallize the contacts from the file.The list is printed with create,search,edit,delete,list,exit.
-It doesnt take other i/p throws the error as a Error.
-CREATE CONTACT:In this, we create the name,phn,mail.
-    The validations are done in individual functions.It provides the three attempts.If the attempts are completed returns to the main.
-    Otherwise Stored in structure and increases the contactCount.
-SEARCH Contact:the search contact takes the input string from the user and searches it with in the structure.If matches any of the val in the structure it prints with the indexes.Otherwise shows the Error as No Details Fund.
-EDIT Contact: Edit operation is performed only when the search gives any indexes.The search takes the input string from the user and searches it with in the structure.If matches any of the val in the structure it prints with the indexes.
-                if we give index no in edit it edits in that index only It performs Edit by name/phn/mail.here we take string from usr ,what the user gives the string is again validated (by name/mobile/mail).And stored in structure.
-DELETE Contact:Delete also similar to Edit.After taking the indexes from search. It ask the usr which index you want to delete . Here we are asking confirmation to delete by taking i/p char from ur.
-LISTING Conatcts: We will print the contacts which are available in the Structure
-EXIT: Asks the Confirmation from the usr with char.While Exiting,The contacts are Saved to the file.The contacts are saved seperated by comma.so that at the time of loading contacts it is easy.
-    
+The Address Book project uses nested structures to store contact details, including name, phone number, and email, with input validation.
+It provides Create, Search, Edit, Delete, and List operations through a menu interface.
+Contacts are loaded from and saved to a CSV file to maintain data across program executions.
 
 */
 
@@ -89,3 +79,4 @@ int main() {
     
        return 0;
 }
+
